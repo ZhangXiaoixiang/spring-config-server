@@ -1,0 +1,25 @@
+#基本服务器端口号
+server:
+  port: 8888
+#这样写自带验证,新版本
+#management:
+#  server:
+#    port: 8888
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+spring:
+  profiles:
+    active: subversion
+  cloud:
+    config:
+      server:
+        svn:
+          uri: http://xiaomiPro/svn/test-project/
+          username: root
+          password: 1234
+        default-label: default-config
+
+
