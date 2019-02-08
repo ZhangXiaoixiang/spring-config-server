@@ -1,10 +1,7 @@
 #基本服务器端口号
 server:
   port: 8888
-#这样写自带验证,新版本
-#management:
-#  server:
-#    port: 8888
+#这样写,新版本
 management:
   endpoints:
     web:
@@ -21,5 +18,3 @@ spring:
           username: root
           password: 1234
         default-label: default-config
-
-
